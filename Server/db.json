@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "snackName": "PopTarts",
+    "quantity": 20
+  
+  },
+  {
+    "id": 2,
+    "snackName": "Snack Cakes",
+    "quantity": 20
+  
+  },
+  {
+    "id": 3,
+    "snackName": "Pack of Almonds",
+    "quantity": 20
+  
+  }
+]
