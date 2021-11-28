@@ -2,7 +2,7 @@
   "name": "minicap",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "server/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -12,6 +12,8 @@
     "chromedriver": "^96.0.0",
     "cors": "^2.8.5",
     "express": "^4.17.1",
+    "heroku": "^7.59.2",
+    "json": "^11.0.0",
     "nodemon": "^2.0.15"
   }
 }
