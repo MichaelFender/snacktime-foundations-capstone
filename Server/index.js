@@ -4,6 +4,7 @@ const cors = require("cors");
 const app = express();
 
 
+
 app.use(cors());
 
 app.use(express.json()); // When we want to be able to accept JSON.
