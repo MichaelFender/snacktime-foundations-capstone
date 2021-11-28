@@ -28,6 +28,11 @@ module.exports = {
         // console.log(type)
         let index = snacks.findIndex(elem => +elem.id === +id)
         // console.log(index)
+        if (snacks[index].quantity === 200 && type === 'plus'){
+            res.status(400).send('NO ROOM FOR OVER 200!!')
+        } else if (snacks[index].quantity === 0 && type === 'minus'){
+            res.status(400).alert('TIME TO REORDER & RESTOCK!!')
+        } else
          if (type === 'plus'){
             snacks[index].quantity = parseInt(snacks[index].quantity) + 1
             res.status(200).send(snacks)

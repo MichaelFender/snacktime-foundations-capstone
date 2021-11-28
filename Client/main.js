@@ -36,11 +36,11 @@ function createSnackCard(snack) {
     snackCard.innerHTML = `
     <p class="snackName">${snack.snackName}</p>
     <div class="btns-container">
-        <button onclick="updateSnack(${snack.id}, 'minus')">-</button>
+        <button onclick="updateSnack(${snack.id}, 'minus')">less</button>
         <p class="snack-quantity">${snack.quantity}</p>
-        <button onclick="updateSnack(${snack.id}, 'plus')">+</button>
+        <button onclick="updateSnack(${snack.id}, 'plus')">more</button>
     </div>
-    <button onclick="deleteSnack(${snack.id})">delete</button>
+    <button onclick="deleteSnack(${snack.id})">Delete</button>
     `
 
 
