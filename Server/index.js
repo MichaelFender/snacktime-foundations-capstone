@@ -8,8 +8,14 @@ const app = express();
 
 app.use(cors());
 
-app.use(express.json()); // When we want to be able to accept JSON.
-///////////////////////////////////////
+app.use(express.json());
+app.use(express.static('client'))
+
+
+
+
+
+
 const {
   getSnacks,
   deleteSnack, 
