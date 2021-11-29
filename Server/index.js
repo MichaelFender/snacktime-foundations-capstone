@@ -26,8 +26,8 @@ app.put(`/api/snacks/:id`, updateSnack)
 
 
 ///////////////////////////////////////
-// const port = process.env.PORT || 4000
-// app.listen(port, () => {
-//   console.log(`The app is ready on port ${port}`);
-// });
-server.listen(process.env.PORT || port)
+const port = process.env.PORT
+app.listen(port, () => {
+  console.log(`The app is ready on port ${port}`);
+});
+
