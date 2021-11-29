@@ -1,7 +1,7 @@
 const snacksContainer = document.querySelector('#snacks-container')
 const form = document.querySelector('form')
 
-const baseURL = `http://localhost:3000/api/snacks`
+const baseURL = `http://localhost:4000/api/snacks`
 
 const snacksCallback = ({ data: snacks }) => displaySnacks(snacks)
 const errCallback = err => console.log(err)
