@@ -11,7 +11,7 @@
 ---
 ## Features
 ***
-##### We start out with three great snacks and allow the user to add, delete, and modify the amount of each snack in the pantry.
+#### We start out with three great snacks and allow the user to add, delete, and modify the amount of each snack in the pantry.
 ![alt text](https://github.com/MichaelFeneder/snacktime-foundations-capstone/blob/main/SnackTime.gif)
 ---
 ## About The Developer
