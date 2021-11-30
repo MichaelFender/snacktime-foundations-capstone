@@ -1,11 +1,10 @@
 # SnackTime Pantry
 ---
 ## Table of Contents
----
-..* Summary
-..* Tech Stack
-..* Features
-..* About the Developer
+1. Summary
+2. Tech Stack
+3. Features
+4. About the Developer
 ---
 ## Summary
 ### SnackTime Pantry is an inventory management system for serious snackers.  The user can add and delete snacks, as well as add or subtract the number of individual snacks available.  It is important to know exactly what snacks are available to you when watching television, playing online games, or spending hours coding a new application.
