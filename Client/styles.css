@@ -28,18 +28,7 @@ h2  {
   display: flex; 
   justify-content: center; 
   align-items: center;
-  color: rgb(196, 226, 255);
-}
-
-
-
-hr2 {
-  display: block;
-  height: 3px;
-  border: 0;
-  border-top: 2px dotted rgba(195, 255, 0, 0.767);
-  margin: 1em 0;
-  padding: 0;
+  color: rgb(255, 255, 255);
 }
 
 form {
