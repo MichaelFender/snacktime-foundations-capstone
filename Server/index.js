@@ -11,13 +11,12 @@ app.use(cors());
 
 app.use(express.json());
 // app.use(express.static('client'))
-// console.log(__dirname);
 // app.get('/', (req, res) => {
 //   res.sendFile(path.join(__dirname, '../client/index.html'))
 // })
 app.use(express.static("client"));
 app.get('/', (req, res) => {
-  res.sendFile('client/index.html')
+  res.sendFile('index.html')
 
 })
 
