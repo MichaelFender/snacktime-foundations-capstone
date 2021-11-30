@@ -11,7 +11,7 @@
 ---
 ## Features
 ***
-!(https://github.com/MichaelFeneder/snacktime-foundations-capstone/blob/main/SnackTime.gif)
+![alt text](https://github.com/MichaelFeneder/snacktime-foundations-capstone/blob/main/SnackTime.gif "MyGif")
 ---
 ## About The Developer
 Michael Fender has an extensive background in psychiatric nursing.  He enjoys photography, camping, and snacking while programming!  You can learn more about him on his [LinkedIn](https://www.linkedin.com/in/michael-fender-57652b124/)
