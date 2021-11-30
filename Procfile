@@ -1,1 +1,2 @@
-web:node server/index.js
+web:npm start
+worker:node server/index.js
