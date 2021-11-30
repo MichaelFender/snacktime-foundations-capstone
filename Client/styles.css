@@ -32,14 +32,6 @@ h2  {
 }
 
 
-hr {
-  display: block;
-  height: 1px;
-  border: 0;
-  border-top: 4px solid rgba(195, 255, 0, 0.767);
-  margin: 1em 0;
-  padding: 0;
-}
 
 hr2 {
   display: block;
@@ -118,7 +110,7 @@ input[type='text'] {
 }
 
 .music-container {
-  /* background-color: rgb(131, 49, 49); */
+  float: bottom;
   border-radius: 0px;
   box-shadow:  rgba(0, 132, 255, 0.6);
   display: flex;
