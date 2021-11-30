@@ -51,7 +51,33 @@
 
     </main>
     
- 
+    <div class="music-container" id="music-container">
+        <div class="music-info">
+          <h4 id="title"></h4>
+          <div class="progress-container" id="progress-container">
+            <div class="progress" id="progress"></div>
+          </div>
+        </div>
+  
+        <audio src="music/thanos.mp3" id="audio"></audio>
+  
+        <div class="img-container">
+          <img src="images/thanos.jpg" alt="music-cover" id="cover" />
+        </div>
+        <div class="navigation">
+          <button id="prev" class="action-btn">
+            <i class="fas fa-backward"></i>
+          Previous</button>
+          <button id="play" class="action-btn">
+            <i class="fas fa-play"></i>
+          Play/Pause</button>
+          <button id="next" class="action-btn">
+            <i class="fas fa-forward"></i>
+          Next</button>
+        </div>
+      </div>
+  
+      <script src="music.js"></script>
 </body>
 <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 <script src="main.js"></script>
