@@ -23,11 +23,11 @@ module.exports = {
 
     updateSnack: (req, res) => {
         let { id } = req.params
-        // console.log(id)
+        
         let {type} = req.body
-        // console.log(type)
+        
         let index = snacks.findIndex(elem => +elem.id === +id)
-        // console.log(index)
+        
         if (snacks[index].quantity === 200 && type === 'plus'){
             res.status(400).send('NO ROOM FOR OVER 200!!')
         } else if (snacks[index].quantity === 0 && type === 'minus'){
@@ -43,6 +43,4 @@ module.exports = {
             res.sendStatus(400)
         }
     }
-
-
 }

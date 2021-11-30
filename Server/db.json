@@ -2,19 +2,19 @@
   {
     "id": 1,
     "snackName": "PopTarts",
-    "quantity": 20
+    "quantity": 6
   
   },
   {
     "id": 2,
     "snackName": "Snack Cakes",
-    "quantity": 20
+    "quantity": 10
   
   },
   {
     "id": 3,
     "snackName": "Pack of Almonds",
-    "quantity": 20
+    "quantity": 12
   
   }
 ]
