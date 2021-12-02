@@ -12,7 +12,7 @@
   const durTime = document.querySelector('#durTime');
   
   // Song titles
-  const songs = ['Exorcist', 'Jazz', 'Thanos', 'StarWars', 'Grinch'];
+  const songs = ['Grinch', 'Thanos', 'Backstreet', 'StarWars'];
   
   // Keep track of song
   let songIndex = 2;
