@@ -12,9 +12,9 @@
   const durTime = document.querySelector('#durTime');
   
   // Song titles
-  const songs = ['Grinch', 'Thanos', 'Backstreet', 'StarWars'];
+  const songs = ['GoldenGirls', 'Thanos', 'BeHappy', 'StarWars'];
   
-  // Keep track of song
+  // Keep track of song - starting position is 0
   let songIndex = 2;
   
   // Initially load song details into DOM
