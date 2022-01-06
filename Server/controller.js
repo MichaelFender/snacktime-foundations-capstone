@@ -1,3 +1,5 @@
+//Handles logic of routes and data manipulation index.js
+
 const snacks = require('./db.json');//pulls json data and saves in snacks variable
 let globalId = 4
 
