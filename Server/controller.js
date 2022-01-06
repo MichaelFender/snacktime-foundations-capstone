@@ -1,11 +1,11 @@
-const snacks = require('./db.json');
+const snacks = require('./db.json');//pulls json data and saves in snacks variable
 let globalId = 4
 
 module.exports = {
     getSnacks: (req, res) => res.status(200).send(snacks),
     deleteSnack: (req, res) => {
         let index = snacks.findIndex(elem => elem.id === +req.params.id)
-        snacks.splice(index, 1)
+        snacks.splice(index, 1)//takes index as an argument
         res.status(200).send(snacks)
     },
      createSnack: (req, res) => {
@@ -22,19 +22,19 @@ module.exports = {
      },
 
     updateSnack: (req, res) => {
-        let { id } = req.params
+        let { id } = req.params//route to update
         
-        let {type} = req.body
+        let {type} = req.body//what the params is updating
         
-        let index = snacks.findIndex(elem => +elem.id === +id)
+        let index = snacks.findIndex(elem => +elem.id === +id)//converts ID string to number
         
-        if (snacks[index].quantity === 200 && type === 'plus'){
-            res.status(400).send('NO ROOM FOR OVER 200!!')
+        if (snacks[index].quantity === 25 && type === 'plus'){
+            res.status(400).send('NO ROOM FOR OVER 25!!')
         } else if (snacks[index].quantity === 0 && type === 'minus'){
             res.status(400).alert('TIME TO REORDER & RESTOCK!!')
         } else
          if (type === 'plus'){
-            snacks[index].quantity = parseInt(snacks[index].quantity) + 1
+            snacks[index].quantity += 1
             res.status(200).send(snacks)
         } else if (type === 'minus') {
             snacks[index].quantity -= 1

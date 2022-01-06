@@ -6,7 +6,7 @@ const baseURL = `http://localhost:4000/api/snacks`
 const snacksCallback = ({ data: snacks }) => displaySnacks(snacks)
 const errCallback = err => console.log(err)
 
-const getAllSnacks = () => axios.get(baseURL).then(snacksCallback).catch(errCallback)
+const getAllSnacks = () => axios.get(baseURL).then(snacksCallback).catch(errCallback)//index
 const createSnack = body => axios.post(baseURL, body).then(snacksCallback).catch(errCallback)
 const deleteSnack = id => axios.delete(`${baseURL}/${id}`).then(snacksCallback).catch(errCallback)
 const updateSnack = (id, type) => axios.put(`${baseURL}/${id}`, {type}).then(snacksCallback).catch(errCallback)
