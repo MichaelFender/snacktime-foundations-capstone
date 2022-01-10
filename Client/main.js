@@ -1,16 +1,16 @@
 const snacksContainer = document.querySelector('#snacks-container')//targets container
 const form = document.querySelector('form')//targets form
-const baseURL = `${window.location.origin}/api/snacks`
+const baseURL = window.location.origin
 //^^ saves these variables for use within the entire file
 
 const snacksCallback = ({ data: snacks }) => displaySnacks(snacks)
 const errCallback = err => console.log(err)//will console log errors
 //////
 
-const createSnack = body => axios.post(baseURL, body).then(snacksCallback).catch(errCallback)
-const getAllSnacks = () => axios.get(baseURL).then(snacksCallback).catch(errCallback)//READ
-const updateSnack = (id, type) => axios.put(`${baseURL}/${id}`, {type}).then(snacksCallback).catch(errCallback)
-const deleteSnack = id => axios.delete(`${baseURL}/${id}`).then(snacksCallback).catch(errCallback)
+const createSnack = body => axios.post(`${baseURL}/api/snacks`, body).then(snacksCallback).catch(errCallback)
+const getAllSnacks = () => axios.get(`${baseURL}/api/snacks`).then(snacksCallback).catch(errCallback)//READ
+const updateSnack = (id, type) => axios.put(`${baseURL}/api/snacks/${id}`, {type}).then(snacksCallback).catch(errCallback)
+const deleteSnack = id => axios.delete(`${baseURL}/api/snacks/${id}`).then(snacksCallback).catch(errCallback)
 //^^ CRUD actions 
 
 function submitHandler(e) {
