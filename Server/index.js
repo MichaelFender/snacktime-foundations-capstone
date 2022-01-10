@@ -36,10 +36,10 @@ app.put(`/api/snacks/:id`, updateSnack)
 //^^CRUD routes from CONTROLLER.js
 ///////////////////////////////////////
 
-// const port = process.env.PORT || process.env.SERVER_PORT;
-const { PORT } = process.env;
+const port = process.env.PORT || process.env.SERVER_PORT;
+//const { PORT } = process.env.PORT || process.env.SERVER_PORT;
 
-app.listen(PORT, () => {
-  console.log(`The app is ready on port ${PORT}`);
+app.listen(port, () => {
+  console.log(`The app is ready on port ${port}`);
 });
 
