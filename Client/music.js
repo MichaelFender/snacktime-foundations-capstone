@@ -15,7 +15,7 @@
   const songs = ['GoldenGirls', 'Thanos', 'BeHappy', 'StarWars'];
   
   // Keep track of song - starting position is 0
-  let songIndex = 2;
+  let songIndex = 1;
   
   // Initially load song details into DOM
   loadSong(songs[songIndex]);
