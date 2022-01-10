@@ -1,6 +1,6 @@
 const snacksContainer = document.querySelector('#snacks-container')//targets container
 const form = document.querySelector('form')//targets form
-const baseURL = `http://localhost:4000/api/snacks`
+const baseURL = `${window.location.origin}/api/snacks`
 //^^ saves these variables for use within the entire file
 
 const snacksCallback = ({ data: snacks }) => displaySnacks(snacks)
