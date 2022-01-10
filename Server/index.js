@@ -8,10 +8,16 @@ app.use(cors());
 app.use(express.json());
 app.use(express.static('client'))
 //^^MiddleWare
+//////
+// app.use(express.static(path.resolve(__dirname, "../build")))
 
 app.get('/', (req, res) => {
   res.sendFile(path.join(__dirname, '../client/index.html'))//send file as a response to navigation
 })
+/////
+// app.get('/*', function (req, res) {
+// res.sendFile(path.join(__dirname, '..build, index.html'))
+// })
 //^^route to client file
 
 const {
@@ -19,7 +25,8 @@ const {
   deleteSnack, 
   createSnack, 
   updateSnack
-} = require('./controller')
+} = require('./controller');
+const res = require("express/lib/response");
 //^^controller actions
 
 app.get(`/api/snacks`, getSnacks)
@@ -29,9 +36,10 @@ app.put(`/api/snacks/:id`, updateSnack)
 //^^CRUD routes from CONTROLLER.js
 ///////////////////////////////////////
 
-const port = process.env.PORT || process.env.SERVER_PORT;
+// const port = process.env.PORT || process.env.SERVER_PORT;
+const { PORT } = process.env;
 
-app.listen(port, () => {
-  console.log(`The app is ready on port ${port}`);
+app.listen(PORT, () => {
+  console.log(`The app is ready on port ${PORT}`);
 });
 
