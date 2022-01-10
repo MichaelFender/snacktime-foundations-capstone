@@ -6,7 +6,7 @@ const app = express(); //invocation of express - allows use of express method - 
 ////
 app.use(cors());
 app.use(express.json());
-// app.use(express.static('client'))
+app.use(express.static('client'))
 //^^MiddleWare
 //////
 
@@ -14,8 +14,9 @@ app.use(express.json());
 app.get('/', (req, res) => {
   res.sendFile(path.join(__dirname, '../client/index.html'))//send file as a response to navigation
 })
-app.use(express.static('client'))
 //^^route to client file
+
+
 
 const {
   getSnacks,
