@@ -12,6 +12,7 @@ module.exports = {
     },
      createSnack: (req, res) => {
          let { snackName, quantity } = req.body
+         quantity = +quantity//changes string to number
          let newSnack = {
              id: globalId, 
              snackName, 
@@ -19,9 +20,11 @@ module.exports = {
              
          }
          snacks.push(newSnack)
+         console.log(snacks);
          res.status(200).send(snacks)
          globalId++
      },
+
 
     updateSnack: (req, res) => {
         let { id } = req.params//route to update
